@@ -51,7 +51,9 @@ ___
     > - you can see the app in ```localhost:3000```
 
 
-
+## LAST NOTE
+___
+ > - Dont consider anything inside the folder **```/src/components/recipe/rated-recipes```** they will not affect the running of our ap they will be used later upgrades.
 
 
 

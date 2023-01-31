@@ -6,25 +6,25 @@ import useRecipe from "../../../hooks/useRecipe";
 import RecipeCard from "../RecipeCard";
 import { useContext } from "react";
 import { StarRateContext } from "../../store";
-import {useRatedRecipe} from "../../../hooks/useRatedRecipe";
+import { useRatedRecipe } from "../../../hooks/useRatedRecipe";
 import RatedRecipeCard from "./RatedRecipeCard";
 
 const RatedRecipes = () => {
   const [rated, setRated] = useState([]);
-  const [getRatedRecipes] = useRatedRecipe()
+  const [getRatedRecipes] = useRatedRecipe();
   const context = useContext(StarRateContext);
   const recipeStar = context.recipeStar;
   const addRecipeStar = context.addRecipeStar;
-//   const params = useParams();
-//   console.log("params: ", params.name);
-//   const title = params.name.toUpperCase();
+  //   const params = useParams();
+  //   console.log("params: ", params.name);
+  //   const title = params.name.toUpperCase();
 
-  const arrOfIds = recipeStar.map(item=> item.id);
+  const arrOfIds = recipeStar.map((item) => item.id);
   console.log("arrOfIds: ", arrOfIds);
 
-  useEffect(()=>{
-    getRatedRecipes(setRated)
-    }, [recipeStar]);
+  useEffect(() => {
+    getRatedRecipes(setRated);
+  }, [recipeStar]);
 
   return (
     <>
@@ -33,18 +33,22 @@ const RatedRecipes = () => {
       </Title>
       <Container className="container-fluid">
         <div className="row d-flex">
-          {rated == null ? <p>Rated Boş </p> : rated.map((recipe) => {
-            return (
-              <RatedRecipeCard
-                setRated={setRated}
-                rated={rated}
-                key={recipe.id}
-                title={recipe.title}
-                image={recipe.image}
-                id={recipe.id}
-              />
-            );
-          })}
+          {rated == null ? (
+            <p>Rated Boş </p>
+          ) : (
+            rated.map((recipe) => {
+              return (
+                <RatedRecipeCard
+                  setRated={setRated}
+                  rated={rated}
+                  key={recipe.id}
+                  title={recipe.title}
+                  image={recipe.image}
+                  id={recipe.id}
+                />
+              );
+            })
+          )}
         </div>
       </Container>
     </>

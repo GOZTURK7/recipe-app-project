@@ -1,4 +1,3 @@
-
 const useCategories = () => {
   const getCategories = async (setRecipes, category) => {
     const isBestTen = category == "" ? "bestTen" : category;

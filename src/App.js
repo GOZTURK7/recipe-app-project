@@ -5,12 +5,11 @@ import { StarRateProvider } from "./components/store";
 
 function App() {
   return (
-    <StarRateProvider>
+    // <StarRateProvider>
       <div>
         <CustomRoutes />
-        {/* <RatedRecipes/> */}
       </div>
-    </StarRateProvider>
+    // </StarRateProvider>
   );
 }
 

@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/assets/css/style.css';
 import './index.css'
 import { BrowserRouter } from 'react-router-dom';
-// import './assets/css/style.css'
 
 
 

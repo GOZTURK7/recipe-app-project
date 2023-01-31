@@ -3,10 +3,9 @@ import { FaStar } from "react-icons/fa";
 import styled from "styled-components";
 import { useContext } from "react";
 import { StarRateContext } from "../../store";
-import {CiCircleRemove} from 'react-icons/ci'
+import { CiCircleRemove } from "react-icons/ci";
 
-
-const RatedRecipeStarRating = ({id}) => {
+const RatedRecipeStarRating = ({ id }) => {
   const [first, setFirst] = useState(0);
   // const ref = useRef(0);
   const colors = {
@@ -21,25 +20,15 @@ const RatedRecipeStarRating = ({id}) => {
   let recipeStarObj = context.recipeStarObject;
   console.log("0-0 very first before click: ", recipeStar);
 
-  const rate = recipeStar.find(item => item.id == id).rate;
+  const rate = recipeStar.find((item) => item.id == id).rate;
   console.log("rate: ", rate);
-
-
-
-//   useEffect(()=>{
-
-//   }, [recipeStar])
-  
-
 
   return (
     <>
       <Rating className="icon">
         <h2>Rated</h2>
         <div>
-            <CiCircleRemove 
-            className="btn" 
-           />
+          <CiCircleRemove className="btn" />
         </div>
       </Rating>
       <div>
@@ -61,9 +50,9 @@ const RatedRecipeStarRating = ({id}) => {
 };
 
 const Rating = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   h2 {
     font-family: "Montserrat", sans-serif !important;
     font-size: 15px !important;
@@ -80,23 +69,23 @@ align-items: center;
     background: var(--color2);
     color: var(--color1);
   }
-  .btn{
+  .btn {
     background: var(--color10);
     width: 3rem;
     height: 3rem;
-    margin-top:1.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.5rem;
     border-radius: 50%;
-    padding:0;
+    padding: 0;
     color: white;
     background: red !important;
     margin-right: 0.2rem;
     background: var(--color10);
   }
-  .btn:hover{
-    color:red;
+  .btn:hover {
+    color: red;
     background: white !important;
-    }
+  }
 `;
 
 export default RatedRecipeStarRating;

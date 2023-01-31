@@ -10,7 +10,6 @@ const HeaderSearchBar = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     navigate(`/search/${input}`);
-    console.log("input: ", input);
   };
 
   return (
