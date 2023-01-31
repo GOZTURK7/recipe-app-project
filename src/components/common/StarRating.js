@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import styled from "styled-components";
-import { useContext } from "react";
-import { StarRateContext } from "../store";
 
 const StarRating = ({ id }) => {
   const [first, setFirst] = useState(0);
@@ -10,18 +8,6 @@ const StarRating = ({ id }) => {
     orange: "var(--color10)",
     gray: "var(--color5)",
   };
-
-  const context = useContext(StarRateContext);
-  const addRecipeStar = context.addRecipeStar;
-  let recipeStarObj = context.recipeStarObject;
-  let newObj = { id: recipeStarObj.id, rate: recipeStarObj.rate };
-
-  useEffect(() => {
-    newObj.id = id;
-    newObj.rate = first;
-    addRecipeStar(newObj);
-  }, [first]);
-
   return (
     <>
       <Rating className="icon">

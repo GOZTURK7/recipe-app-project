@@ -1,5 +1,47 @@
-# RECIPE WEBSITE APP PROJECT
-## Getting Started
+# :spaghetti: :sushi: :hamburger: RECIPE APP PROJECT :pizza: :meat_on_bone: :ramen:
+
+
+### ROJECT STRUCTURE
+
+```
+├── App.js
+├── assets
+│   ├── css
+│   └── img
+├── components
+│   ├── common
+│   │   ├── CarouselHome.js
+│   │   └── StarRating.js
+│   ├── footer
+│   │   ├── Footer.js
+│   │   └── footer.css
+│   ├── header
+│   │   ├── Header.js
+│   │   └── HeaderSearchBar.js
+│   ├── home-page
+│   │   └── HomePage.js
+│   ├── nutrutions-bars
+│   │   ├── Bar.js
+│   │   ├── NutritionsBars.css
+│   │   └── NutritionsBars.js
+│   ├── recipe
+│   │   ├── RecipeCard.js
+│   │   ├── RecipeCategory.js
+│   │   ├── RecipeDetails.js
+│   │   ├── RecipesByCategory.js
+│   │   └── SearchedRecipes.js
+│   ├── router
+│   │   └── CustomRoutes.js
+│   └── templates
+│       └── Template.js
+├── hooks
+│   ├── useCarouselRecipe.js
+│   ├── useCategories.js
+│   └── useRecipe.js
+├── index.css
+└── index.js
+ ```
+## Getting Started :rocket: :rocket:
 ___ 
 In this project I have tried to provide things below to the users of recipe app; 
 > 1) users may see the chef's best three recipes also see the top-rated 10 recipes and rate them on the home page;<br>
@@ -41,7 +83,8 @@ ___
 
     > ![api key](./src/assets/img/apiKey%20page.png)
 
-    > this api key is provide you **150 points** fetch ability per day but dont worry, I have used the **localstorage** in my project to cache the fetched values,  but even so, if you used up all the points I recommend you ***subscribe again with another mail address*** but dont forget the restart the project after you changed the api key on your ```.env```file
+    > this api key is provide you **150 points** fetch ability per day but dont worry, I have used the :floppy_disk: **localstorage** in my project to cache the fetched values,  but even so, if you used up all the points I recommend you ***subscribe again with another mail address*** :boom: but dont forget the restart the project after you changed the api key on your ```.env```file
+
 
 * if you did the above;
 
@@ -50,12 +93,10 @@ ___
     > - ```npm install```[```package.json``` file includes the dependencies that you will be needed ].
     > - you can see the app in ```localhost:3000```
 
+## GOOD LUCK :rocket:
 
-## LAST NOTE
 ___
- > - Dont consider anything inside the folder **```/src/components/recipe/rated-recipes```** they will not affect the running of our ap they will be used later upgrades.
-
-
+----
 
 
 
