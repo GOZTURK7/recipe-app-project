@@ -44,7 +44,7 @@
 ## Getting Started :rocket: :rocket:
 ___ 
 In this project I have tried to provide things below to the users of recipe app; 
-> :one: users may see the chef's best three recipes also see the top-rated 10 recipes and rate them on the home page;<br>
+> :one: users may see the chef's best three recipes also see the top-rated 10 recipes and rate them on the home page;
 ![Genaral-features](https://j.gifs.com/gpEAyl.gif)
 
 
